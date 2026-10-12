@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>مؤسسة الشمس | تشطيبات وديكور وسباكة وكهرباء وتكييف وكاميرات - السعودية</title>
+<meta name="description" content="تشطيبات داخلية وديكورات، سباكة، كهرباء، تكييف وكاميرات مراقبة في المملكة العربية السعودية. اتصل أو راسلنا على واتساب.">
+<meta name="theme-color" content="#070b18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='16' fill='%23ff9a1f'/%3E%3Cg stroke='%23ffb52e' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M32 4v8M32 52v8M4 32h8M52 32h8M12 12l6 6M46 46l6 6M12 52l6-6M46 18l6-6'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+:root{
+ --bg:#eef3fb;--fg:#0b1630;--dim:#4a5878;--surface:rgba(255,255,255,.62);--surface-hi:rgba(255,255,255,.82);
+ --stroke:rgba(255,255,255,.9);--inset:rgba(255,255,255,.7);--shadow:0 20px 50px -20px rgba(30,60,140,.35);
+ --shadow-hi:0 30px 70px -20px rgba(30,60,140,.5);--field:rgba(255,255,255,.75);--field-stroke:rgba(11,22,48,.14);
+ --cyan:#0891b2;--blue:#2563eb;--amber:#d97706;--lime:#16a34a;--violet:#7c3aed;--pink:#db2777;--wa:#16a34a;
+ --on-accent:#fff;--on-img:#fff;--blob1:#38bdf8;--blob2:#a78bfa;--blob3:#34d399;--blob4:#f472b6;--blob-op:.55;
+ color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --bg:#070b18;--fg:#eaf2ff;--dim:#9db0d3;--surface:rgba(255,255,255,.07);--surface-hi:rgba(255,255,255,.12);
+ --stroke:rgba(255,255,255,.16);--inset:rgba(255,255,255,.12);--shadow:0 20px 60px -20px rgba(0,0,0,.8);
+ --shadow-hi:0 30px 80px -20px rgba(0,229,255,.28);--field:rgba(255,255,255,.07);--field-stroke:rgba(255,255,255,.2);
+ --cyan:#22e5ff;--blue:#5b8cff;--amber:#ffb84a;--lime:#7dff9a;--violet:#a78bfa;--pink:#ff5fb0;--wa:#25d366;
+ --on-accent:#04101a;--blob1:#0ea5e9;--blob2:#7c3aed;--blob3:#10b981;--blob4:#ec4899;--blob-op:.5;color-scheme:dark}}
+:root[data-theme="dark"]{
+ --bg:#070b18;--fg:#eaf2ff;--dim:#9db0d3;--surface:rgba(255,255,255,.07);--surface-hi:rgba(255,255,255,.12);
+ --stroke:rgba(255,255,255,.16);--inset:rgba(255,255,255,.12);--shadow:0 20px 60px -20px rgba(0,0,0,.8);
+ --shadow-hi:0 30px 80px -20px rgba(0,229,255,.28);--field:rgba(255,255,255,.07);--field-stroke:rgba(255,255,255,.2);
+ --cyan:#22e5ff;--blue:#5b8cff;--amber:#ffb84a;--lime:#7dff9a;--violet:#a78bfa;--pink:#ff5fb0;--wa:#25d366;
+ --on-accent:#04101a;--blob1:#0ea5e9;--blob2:#7c3aed;--blob3:#10b981;--blob4:#ec4899;--blob-op:.5;color-scheme:dark}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Cairo,"Segoe UI",Tahoma,system-ui,sans-serif;overflow-x:hidden;min-height:100vh;transition:background .4s,color .4s}
+a{color:inherit;text-decoration:none}
+.mesh{position:fixed;inset:0;z-index:-1;overflow:hidden;background:var(--bg)}
+.blob{position:absolute;width:55vmax;height:55vmax;border-radius:50%;filter:blur(90px);opacity:var(--blob-op);will-change:transform;mix-blend-mode:normal}
+.b1{background:var(--blob1);top:-18vmax;inset-inline-start:-14vmax;animation:f1 22s ease-in-out infinite alternate}
+.b2{background:var(--blob2);top:10vmax;inset-inline-end:-18vmax;animation:f2 26s ease-in-out infinite alternate}
+.b3{background:var(--blob3);bottom:-22vmax;inset-inline-start:8vmax;animation:f3 30s ease-in-out infinite alternate}
+.b4{background:var(--blob4);bottom:-10vmax;inset-inline-end:-6vmax;width:38vmax;height:38vmax;animation:f4 24s ease-in-out infinite alternate}
+@keyframes f1{to{transform:translate(18vmax,12vmax) scale(1.2)}}
+@keyframes f2{to{transform:translate(-16vmax,18vmax) scale(.85)}}
+@keyframes f3{to{transform:translate(14vmax,-14vmax) scale(1.15)}}
+@keyframes f4{to{transform:translate(-18vmax,-10vmax) scale(1.25)}}
+.gridlines{position:absolute;inset:0;background-image:linear-gradient(var(--inset) 1px,transparent 1px),linear-gradient(90deg,var(--inset) 1px,transparent 1px);background-size:56px 56px;opacity:.18;mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%)}
+.glass{background:var(--surface);border:1px solid var(--stroke);box-shadow:var(--shadow),inset 0 1px 0 var(--inset);-webkit-backdrop-filter:blur(22px) saturate(160%);backdrop-filter:blur(22px) saturate(160%);border-radius:28px}
+.nav{position:fixed;top:max(12px,env(safe-area-inset-top));inset-inline:16px;z-index:50;max-width:1180px;margin-inline:auto;border-radius:999px;padding:8px 10px 8px 14px;display:flex;align-items:center;gap:10px}
+.glow-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:999px;font-weight:800;color:var(--on-accent);background:linear-gradient(135deg,var(--cyan),var(--blue));box-shadow:0 0 0 0 var(--cyan),0 8px 30px -6px var(--cyan);animation:pulse 2.4s infinite;cursor:pointer;border:0;font-family:inherit;font-size:1rem;transition:transform .2s}
+.glow-btn:hover{transform:translateY(-2px) scale(1.03)}
+.wa-btn{background:linear-gradient(135deg,var(--wa),#0fa958);box-shadow:0 8px 30px -6px var(--wa);animation:pulsew 2.4s infinite;color:#04200f}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--cyan) 55%,transparent),0 8px 30px -6px var(--cyan)}70%{box-shadow:0 0 0 14px transparent,0 8px 30px -6px var(--cyan)}100%{box-shadow:0 0 0 0 transparent,0 8px 30px -6px var(--cyan)}}
+@keyframes pulsew{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--wa) 60%,transparent),0 8px 30px -6px var(--wa)}70%{box-shadow:0 0 0 14px transparent,0 8px 30px -6px var(--wa)}100%{box-shadow:0 0 0 0 transparent,0 8px 30px -6px var(--wa)}}
+.ghost{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:999px;font-weight:700;background:var(--surface);border:1px solid var(--stroke);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);cursor:pointer;font-family:inherit;color:var(--fg);font-size:1rem;transition:transform .2s,background .2s}
+.ghost:hover{background:var(--surface-hi);transform:translateY(-2px)}
+.lsw{direction:ltr;display:inline-flex;position:relative;border-radius:999px;background:var(--field);border:1px solid var(--field-stroke);padding:3px;min-height:44px;align-items:center;cursor:pointer;font-family:inherit;color:var(--fg)}
+.lsw span{position:relative;z-index:1;width:44px;text-align:center;font-weight:800;font-size:.85rem;transition:color .3s}
+.lsw i{position:absolute;top:3px;bottom:3px;width:44px;border-radius:999px;background:linear-gradient(135deg,var(--cyan),var(--blue));transition:transform .3s;left:3px}
+.lsw[data-lang="en"] i{transform:translateX(44px)}
+.lsw[data-lang="ar"] span:first-of-type{color:var(--on-accent)}.lsw[data-lang="en"] span:last-of-type{color:var(--on-accent)}
+.icobtn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--field);border:1px solid var(--field-stroke);cursor:pointer;color:var(--fg)}
+.neon-text{background:linear-gradient(90deg,var(--cyan),var(--violet),var(--pink),var(--cyan));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:250% 0}}
+.scene{perspective:1100px}
+.tilt{transform-style:preserve-3d;transition:transform .25s ease-out,box-shadow .3s;will-change:transform}
+.tilt:hover{box-shadow:var(--shadow-hi),inset 0 1px 0 var(--inset)}
+.z1{transform:translateZ(40px)}.z2{transform:translateZ(70px)}
+.float{animation:flt 6s ease-in-out infinite}
+.float.d2{animation-delay:-2s}.float.d3{animation-delay:-4s}
+@keyframes flt{50%{translate:0 -14px}}
+.orbit{position:absolute;border-radius:50%;border:1px dashed var(--field-stroke);animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.svc{overflow:hidden;display:flex;flex-direction:column}
+.svc .ph{position:relative;height:200px;background:linear-gradient(135deg,var(--blob1),var(--blob2));overflow:hidden}
+.svc .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.svc:hover .ph img{transform:scale(1.08)}
+.svc .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 60%);pointer-events:none}
+.svc .ic{position:absolute;bottom:12px;inset-inline-start:14px;z-index:2;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--surface-hi);border:1px solid var(--stroke);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-size:1.4rem}
+.svc ul{list-style:none;margin:0;padding:0}
+.svc li{display:flex;gap:8px;align-items:flex-start;padding:5px 0;color:var(--dim);font-size:.95rem}
+.svc li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+.field{width:100%;min-height:48px;border-radius:16px;padding:10px 14px;background:var(--field);border:1px solid var(--field-stroke);color:var(--fg);font-family:inherit;font-size:1rem;outline:none;transition:border-color .2s,box-shadow .2s}
+.field:focus{border-color:var(--cyan);box-shadow:0 0 0 3px color-mix(in srgb,var(--cyan) 30%,transparent)}
+.field::placeholder{color:var(--dim);opacity:.8}
+select.field option{color:#0b1630;background:#fff}
+.wa-float{position:fixed;bottom:max(18px,env(safe-area-inset-bottom));inset-inline-start:18px;z-index:60;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--wa);color:#04200f;animation:pulsew 2.2s infinite}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+[aria-disabled="true"]{opacity:.5;pointer-events:none;animation:none}
+@media (max-width:767px){.nav .links{display:none}.nav{padding-inline:8px}.brandname{display:none}.nav .glow-btn span.t{display:none}.nav .glow-btn{padding:0;width:44px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+<style id="tw">/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+:root, :host {
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  --spacing: 0.25rem;
+  --container-2xl: 42rem;
+  --container-3xl: 48rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: calc(1.25 / 0.875);
+  --text-lg: 1.125rem;
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: calc(2.25 / 1.875);
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 1;
+  --text-6xl: 3.75rem;
+  --text-6xl--line-height: 1;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+  --leading-tight: 1.25;
+  --leading-relaxed: 1.625;
+  --default-font-family: Cairo, system-ui, sans-serif;
+  --default-mono-font-family: var(--font-mono);
+}
+*, ::after, ::before, ::backdrop, ::file-selector-button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+}
+html, :host {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+  font-feature-settings: var(--default-font-feature-settings, normal);
+  font-variation-settings: var(--default-font-variation-settings, normal);
+  -webkit-tap-highlight-color: transparent;
+}
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+a {
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+b, strong {
+  font-weight: bolder;
+}
+code, kbd, samp, pre {
+  font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+  font-feature-settings: var(--default-mono-font-feature-settings, normal);
+  font-variation-settings: var(--default-mono-font-variation-settings, normal);
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+:-moz-focusring:where(:not(iframe)) {
+  outline: auto;
+}
+progress {
+  vertical-align: baseline;
+}
+summary {
+  display: list-item;
+}
+ol, ul, menu {
+  list-style: none;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  vertical-align: middle;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+button, input, select, optgroup, textarea, ::file-selector-button {
+  font: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+}
+:where(select:is([multiple], [size])) optgroup {
+  font-weight: bolder;
+}
+:where(select:is([multiple], [size])) optgroup option {
+  padding-inline-start: 20px;
+}
+::file-selector-button {
+  margin-inline-end: 4px;
+}
+::placeholder {
+  opacity: 1;
+}
+@supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+  ::placeholder {
+    color: currentcolor;
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, currentcolor 50%, transparent);
+    }
+  }
+}
+textarea {
+  resize: vertical;
+}
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-date-and-time-value {
+  min-height: 1lh;
+  text-align: inherit;
+}
+::-webkit-datetime-edit {
+  display: inline-flex;
+}
+::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+  padding-block: 0;
+}
+::-webkit-calendar-picker-indicator {
+  line-height: 1;
+}
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+  appearance: button;
+}
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  height: auto;
+}
+[hidden]:where(:not([hidden='until-found'])) {
+  display: none !important;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.inset-0 {
+  inset: 0px;
+}
+.mx-auto {
+  margin-inline: auto;
+}
+.ms-auto {
+  margin-inline-start: auto;
+}
+.mt-2 {
+  margin-top: calc(var(--spacing) * 2);
+}
+.mt-3 {
+  margin-top: calc(var(--spacing) * 3);
+}
+.mt-5 {
+  margin-top: calc(var(--spacing) * 5);
+}
+.mt-8 {
+  margin-top: calc(var(--spacing) * 8);
+}
+.mt-10 {
+  margin-top: calc(var(--spacing) * 10);
+}
+.mb-5 {
+  margin-bottom: calc(var(--spacing) * 5);
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.hidden {
+  display: none;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.h-2 {
+  height: calc(var(--spacing) * 2);
+}
+.h-11 {
+  height: calc(var(--spacing) * 11);
+}
+.w-2 {
+  width: calc(var(--spacing) * 2);
+}
+.w-11 {
+  width: calc(var(--spacing) * 11);
+}
+.max-w-2xl {
+  max-width: var(--container-2xl);
+}
+.max-w-3xl {
+  max-width: var(--container-3xl);
+}
+.max-w-\[900px\] {
+  max-width: 900px;
+}
+.max-w-\[1180px\] {
+  max-width: 1180px;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.place-items-center {
+  place-items: center;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-1 {
+  gap: var(--spacing);
+}
+.gap-2 {
+  gap: calc(var(--spacing) * 2);
+}
+.gap-3 {
+  gap: calc(var(--spacing) * 3);
+}
+.gap-4 {
+  gap: calc(var(--spacing) * 4);
+}
+.gap-5 {
+  gap: calc(var(--spacing) * 5);
+}
+.gap-6 {
+  gap: calc(var(--spacing) * 6);
+}
+.gap-8 {
+  gap: calc(var(--spacing) * 8);
+}
+.gap-10 {
+  gap: calc(var(--spacing) * 10);
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.rounded-full {
+  border-radius: calc(infinity * 1px);
+}
+.p-6 {
+  padding: calc(var(--spacing) * 6);
+}
+.p-8 {
+  padding: calc(var(--spacing) * 8);
+}
+.px-4 {
+  padding-inline: calc(var(--spacing) * 4);
+}
+.py-2 {
+  padding-block: calc(var(--spacing) * 2);
+}
+.py-3 {
+  padding-block: calc(var(--spacing) * 3);
+}
+.py-16 {
+  padding-block: calc(var(--spacing) * 16);
+}
+.pt-10 {
+  padding-top: calc(var(--spacing) * 10);
+}
+.pt-32 {
+  padding-top: calc(var(--spacing) * 32);
+}
+.pb-16 {
+  padding-bottom: calc(var(--spacing) * 16);
+}
+.pb-28 {
+  padding-bottom: calc(var(--spacing) * 28);
+}
+.text-center {
+  text-align: center;
+}
+.text-2xl {
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+}
+.text-3xl {
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
+.text-4xl {
+  font-size: var(--text-4xl);
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+}
+.text-lg {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+}
+.text-sm {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.text-xl {
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+}
+.leading-relaxed {
+  --tw-leading: var(--leading-relaxed);
+  line-height: var(--leading-relaxed);
+}
+.leading-tight {
+  --tw-leading: var(--leading-tight);
+  line-height: var(--leading-tight);
+}
+.font-black {
+  --tw-font-weight: var(--font-weight-black);
+  font-weight: var(--font-weight-black);
+}
+.font-bold {
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+.font-extrabold {
+  --tw-font-weight: var(--font-weight-extrabold);
+  font-weight: var(--font-weight-extrabold);
+}
+.font-semibold {
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+}
+@media (width >= 40rem) {
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .sm\:columns-2 {
+    columns: 2;
+  }
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sm\:text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+}
+@media (width >= 48rem) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .md\:flex {
+    display: flex;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .md\:p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
+  .md\:pt-40 {
+    padding-top: calc(var(--spacing) * 40);
+  }
+  .md\:pb-24 {
+    padding-bottom: calc(var(--spacing) * 24);
+  }
+  .md\:text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .md\:text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+}
+@media (width >= 64rem) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .lg\:text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+    }
+  }
+}
+</style>
+</head>
+<body>
+<div class="mesh" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><div class="gridlines"></div></div>
+
+<header class="nav glass" role="banner">
+ <a href="#top" class="flex items-center gap-2 font-extrabold text-lg" aria-label="Home">
+  <span class="grid place-items-center w-11 h-11 rounded-full" style="background:rgba(255,255,255,.12);border:1px solid var(--stroke)"><svg viewBox="0 0 64 64" width="34" height="34" aria-hidden="true"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd24a"/><stop offset=".55" stop-color="#ff9a1f"/><stop offset="1" stop-color="#ff4f8b"/></linearGradient></defs><g stroke="url(#lg1)" stroke-width="4" stroke-linecap="round"><path d="M32 4v8M32 52v8M4 32h8M52 32h8M12.2 12.2l5.7 5.7M46.1 46.1l5.7 5.7M12.2 51.8l5.7-5.7M46.1 17.9l5.7-5.7"/></g><circle cx="32" cy="32" r="14" fill="url(#lg1)"/><path d="M22 34c4 6 16 6 20 0" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/></svg></span>
+  <span class="brandname" data-ar="مؤسسة الشمس" data-en="Al Shams Est.">مؤسسة الشمس</span>
+ </a>
+ <nav class="links hidden md:flex gap-6 mx-auto font-semibold text-sm" aria-label="main">
+  <a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+  <a href="#why" data-ar="لماذا نحن" data-en="Why us">لماذا نحن</a>
+  <a href="#book" data-ar="احجز الآن" data-en="Book">احجز الآن</a>
+  <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+ </nav>
+ <div class="flex items-center gap-2 ms-auto">
+  <button class="lsw" id="langBtn" role="switch" aria-checked="false" aria-label="Language" data-lang="ar"><i></i><span>AR</span><span>EN</span></button>
+  <button class="icobtn" id="themeBtn" aria-label="Theme" title="Theme"><span id="themeIco">🌙</span></button>
+  <a class="glow-btn" href="tel:+966502659091" aria-label="Call"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg><span class="t" data-ar="اتصل الآن" data-en="Call now">اتصل الآن</span></a>
+ </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="px-4 pt-32 pb-16 md:pt-40 md:pb-24 max-w-[1180px] mx-auto grid md:grid-cols-2 gap-10 items-center">
+ <div class="reveal">
+  <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-bold" style="border-radius:999px"><span class="w-2 h-2 rounded-full" style="background:var(--lime);box-shadow:0 0 10px var(--lime)"></span><span data-ar="خدمات صيانة وتشطيبات في المملكة العربية السعودية" data-en="Maintenance & finishing services in Saudi Arabia">خدمات صيانة وتشطيبات في المملكة العربية السعودية</span></span>
+  <h1 class="mt-5 font-black leading-tight text-4xl sm:text-5xl lg:text-6xl"><span data-ar="كل ما يحتاجه بيتك أو مكتبك، " data-en="Everything your home or office needs, ">كل ما يحتاجه بيتك أو مكتبك، </span><span class="neon-text" data-ar="في مكان واحد" data-en="in one place">في مكان واحد</span></h1>
+  <p class="mt-5 text-lg leading-relaxed" style="color:var(--dim)" data-ar="تشطيبات داخلية وديكورات، سباكة، كهرباء، تكييف وكاميرات مراقبة. فنيون متخصصون وتنفيذ بدقة، تواصل معنا الآن للحصول على معاينة وعرض سعر." data-en="Interior finishing & décor, plumbing, electrical, air conditioning and security cameras. Specialised technicians and precise work. Contact us for an inspection and a quote.">تشطيبات داخلية وديكورات، سباكة، كهرباء، تكييف وكاميرات مراقبة. فنيون متخصصون وتنفيذ بدقة، تواصل معنا الآن للحصول على معاينة وعرض سعر.</p>
+  <div class="mt-8 flex flex-wrap gap-3">
+   <a class="glow-btn wa-btn" href="https://wa.me/966502659091" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.6-.1a13 13 0 0 1-4.6-3.6 7.5 7.5 0 0 1-1.6-3.2c0-.7.3-1.2.6-1.5.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6a6 6 0 0 0 2.8 2.4c.3.1.5.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.2.5.3.1.2.1.8-.1 1.4z"/></svg><span data-ar="تواصل عبر واتساب" data-en="Chat on WhatsApp">تواصل عبر واتساب</span></a>
+   <a class="ghost" href="tel:+966502659091"><span data-ar="اتصل: " data-en="Call: ">اتصل: </span><bdi dir="ltr">+966 50 265 9091</bdi></a>
+  </div>
+  <div class="mt-8 flex flex-wrap gap-2 text-sm font-semibold">
+   <span class="ghost" style="min-height:36px;padding:0 14px" data-ar="🏗️ تشطيبات وديكور" data-en="🏗️ Finishing & décor">🏗️ تشطيبات وديكور</span>
+   <span class="ghost" style="min-height:36px;padding:0 14px" data-ar="🚿 سباكة" data-en="🚿 Plumbing">🚿 سباكة</span>
+   <span class="ghost" style="min-height:36px;padding:0 14px" data-ar="⚡ كهرباء" data-en="⚡ Electrical">⚡ كهرباء</span>
+   <span class="ghost" style="min-height:36px;padding:0 14px" data-ar="❄️ تكييف" data-en="❄️ AC">❄️ تكييف</span>
+   <span class="ghost" style="min-height:36px;padding:0 14px" data-ar="📹 كاميرات" data-en="📹 Cameras">📹 كاميرات</span>
+  </div>
+ </div>
+ <div class="scene relative reveal" style="min-height:380px" id="heroScene">
+  <div class="orbit" style="inset:6% 10%" aria-hidden="true"></div>
+  <div class="orbit" style="inset:20% 22%;animation-direction:reverse;animation-duration:28s" aria-hidden="true"></div>
+  <div class="tilt glass absolute overflow-hidden" data-tilt style="inset:8% 6% 14% 6%;padding:0">
+   <img class="z1" src="https://images.unsplash.com/photo-1758448511322-8bfc73daf606?auto=format&fit=crop&w=900&q=70" alt="تشطيبات داخلية" loading="eager" data-fallback style="width:100%;height:100%;object-fit:cover;display:block">
+   <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(0,0,0,.5),transparent 55%)"></div>
+  </div>
+  <div class="glass float absolute px-4 py-3 font-extrabold flex items-center gap-2" style="top:0;inset-inline-end:0;border-radius:20px;transform:translateZ(80px)"><span class="text-2xl">⚡</span><span data-ar="كهرباء" data-en="Electrical">كهرباء</span></div>
+  <div class="glass float d2 absolute px-4 py-3 font-extrabold flex items-center gap-2" style="bottom:4%;inset-inline-start:0;border-radius:20px"><span class="text-2xl">❄️</span><span data-ar="تكييف" data-en="AC">تكييف</span></div>
+  <div class="glass float d3 absolute px-4 py-3 font-extrabold flex items-center gap-2" style="bottom:0;inset-inline-end:8%;border-radius:20px"><span class="text-2xl">📹</span><span data-ar="كاميرات" data-en="Cameras">كاميرات</span></div>
+ </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="px-4 py-16 max-w-[1180px] mx-auto">
+ <div class="text-center max-w-2xl mx-auto reveal">
+  <h2 class="text-3xl md:text-5xl font-black" data-ar="خدماتنا" data-en="Our services">خدماتنا</h2>
+  <p class="mt-3" style="color:var(--dim)" data-ar="خمس خدمات متكاملة تغطي كل احتياجات الصيانة والتشطيب." data-en="Five complete services covering all your maintenance and finishing needs.">خمس خدمات متكاملة تغطي كل احتياجات الصيانة والتشطيب.</p>
+ </div>
+ <div class="scene mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <article class="glass svc tilt reveal" data-tilt>
+   <div class="ph"><img src="https://images.unsplash.com/photo-1660330589693-99889d60181e?auto=format&fit=crop&w=900&q=70" alt="خدمات الكهرباء" loading="lazy" data-fallback><div class="ic">⚡</div></div>
+   <div class="p-6"><h3 class="text-xl font-extrabold" data-ar="الكهرباء" data-en="Electrical">الكهرباء</h3>
+    <ul class="mt-3"><li data-ar="تمديدات وصيانة الكهرباء" data-en="Wiring & electrical maintenance">تمديدات وصيانة الكهرباء</li><li data-ar="لوحات التوزيع والقواطع" data-en="Distribution boards & breakers">لوحات التوزيع والقواطع</li><li data-ar="الإنارة الداخلية والخارجية" data-en="Indoor & outdoor lighting">الإنارة الداخلية والخارجية</li><li data-ar="كشف وإصلاح الأعطال" data-en="Fault finding & repair">كشف وإصلاح الأعطال</li></ul></div>
+  </article>
+  <article class="glass svc tilt reveal" data-tilt>
+   <div class="ph"><img src="https://images.unsplash.com/photo-1589935447067-5531094415d1?auto=format&fit=crop&w=900&q=70" alt="كاميرات المراقبة" loading="lazy" data-fallback><div class="ic">📹</div></div>
+   <div class="p-6"><h3 class="text-xl font-extrabold" data-ar="كاميرات المراقبة" data-en="Security cameras">كاميرات المراقبة</h3>
+    <ul class="mt-3"><li data-ar="تركيب كاميرات المنازل والمحلات" data-en="Home & shop camera installation">تركيب كاميرات المنازل والمحلات</li><li data-ar="أجهزة التسجيل والتخزين" data-en="Recorders & storage">أجهزة التسجيل والتخزين</li><li data-ar="المتابعة عن بعد من الجوال" data-en="Remote viewing from mobile">المتابعة عن بعد من الجوال</li><li data-ar="صيانة وتطوير الأنظمة" data-en="System maintenance & upgrades">صيانة وتطوير الأنظمة</li></ul></div>
+  </article>
+  <article class="glass svc tilt reveal" data-tilt>
+   <div class="ph"><img src="https://images.unsplash.com/photo-1650551182991-b07558247564?auto=format&fit=crop&w=900&q=70" alt="خدمات السباكة" loading="lazy" data-fallback><div class="ic">🚿</div></div>
+   <div class="p-6"><h3 class="text-xl font-extrabold" data-ar="السباكة" data-en="Plumbing">السباكة</h3>
+    <ul class="mt-3"><li data-ar="كشف وإصلاح التسربات" data-en="Leak detection & repair">كشف وإصلاح التسربات</li><li data-ar="تركيب الأدوات الصحية والخلاطات" data-en="Fixtures & mixers installation">تركيب الأدوات الصحية والخلاطات</li><li data-ar="تسليك المجاري" data-en="Drain unblocking">تسليك المجاري</li><li data-ar="تمديدات المياه والخزانات" data-en="Water lines & tanks">تمديدات المياه والخزانات</li></ul></div>
+  </article>
+  <article class="glass svc tilt reveal" data-tilt>
+   <div class="ph"><img src="https://images.unsplash.com/photo-1667983453881-4992fe86ab1b?auto=format&fit=crop&w=900&q=70" alt="خدمات التكييف" loading="lazy" data-fallback><div class="ic">❄️</div></div>
+   <div class="p-6"><h3 class="text-xl font-extrabold" data-ar="التكييف" data-en="Air conditioning">التكييف</h3>
+    <ul class="mt-3"><li data-ar="تركيب المكيفات بأنواعها" data-en="Installing all AC types">تركيب المكيفات بأنواعها</li><li data-ar="تنظيف وصيانة دورية" data-en="Cleaning & routine service">تنظيف وصيانة دورية</li><li data-ar="تعبئة الفريون وكشف التسريب" data-en="Refrigerant refill & leak check">تعبئة الفريون وكشف التسريب</li><li data-ar="إصلاح الأعطال" data-en="Fault repair">إصلاح الأعطال</li></ul></div>
+  </article>
+  <article class="glass svc tilt reveal sm:col-span-2 lg:col-span-2" data-tilt>
+   <div class="ph" style="height:240px"><img src="https://images.unsplash.com/photo-1758448511322-8bfc73daf606?auto=format&fit=crop&w=1200&q=70" alt="تشطيبات وديكور" loading="lazy" data-fallback><div class="ic">🏗️</div></div>
+   <div class="p-6"><h3 class="text-xl font-extrabold" data-ar="التشطيبات الداخلية والديكور" data-en="Interior finishing & décor">التشطيبات الداخلية والديكور</h3>
+    <ul class="mt-3 sm:columns-2 gap-8"><li data-ar="دهانات وأعمال الجبس" data-en="Painting & gypsum works">دهانات وأعمال الجبس</li><li data-ar="أرضيات وبلاط وسيراميك" data-en="Flooring, tiles & ceramic">أرضيات وبلاط وسيراميك</li><li data-ar="ديكورات وإضاءة مخفية" data-en="Décor & concealed lighting">ديكورات وإضاءة مخفية</li><li data-ar="تجديد الغرف والمطابخ والحمامات" data-en="Rooms, kitchens & bathrooms refresh">تجديد الغرف والمطابخ والحمامات</li></ul></div>
+  </article>
+ </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="px-4 py-16 max-w-[1180px] mx-auto">
+ <div class="text-center reveal"><h2 class="text-3xl md:text-5xl font-black" data-ar="لماذا نحن؟" data-en="Why choose us?">لماذا نحن؟</h2></div>
+ <div class="scene mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+  <div class="glass tilt p-6 reveal" data-tilt><div class="text-4xl">🕒</div><h3 class="mt-3 text-lg font-extrabold" data-ar="خدمة على مدار الساعة" data-en="24/7 service">خدمة على مدار الساعة</h3><p class="mt-2 text-sm" style="color:var(--dim)" data-ar="نستقبل طلباتك في أي وقت ونرد بأسرع ما يمكن." data-en="We take your requests any time and reply as fast as we can.">نستقبل طلباتك في أي وقت ونرد بأسرع ما يمكن.</p></div>
+  <div class="glass tilt p-6 reveal" data-tilt><div class="text-4xl">👷</div><h3 class="mt-3 text-lg font-extrabold" data-ar="فرق محترفة" data-en="Professional teams">فرق محترفة</h3><p class="mt-2 text-sm" style="color:var(--dim)" data-ar="فنيون متخصصون في كل مجال لتنفيذ العمل بإتقان." data-en="Specialised technicians in every field for precise work.">فنيون متخصصون في كل مجال لتنفيذ العمل بإتقان.</p></div>
+  <div class="glass tilt p-6 reveal" data-tilt><div class="text-4xl">💎</div><h3 class="mt-3 text-lg font-extrabold" data-ar="شفافية في الأسعار" data-en="Transparent pricing">شفافية في الأسعار</h3><p class="mt-2 text-sm" style="color:var(--dim)" data-ar="عرض سعر واضح قبل البدء بدون مفاجآت." data-en="A clear quote before we start, with no surprises.">عرض سعر واضح قبل البدء بدون مفاجآت.</p></div>
+  <div class="glass tilt p-6 reveal" data-tilt><div class="text-4xl">🛡️</div><h3 class="mt-3 text-lg font-extrabold" data-ar="ضمان على الأعمال" data-en="Work warranty">ضمان على الأعمال</h3><p class="mt-2 text-sm" style="color:var(--dim)" data-ar="ضمان على التنفيذ وفق الاتفاق المسبق." data-en="A warranty on workmanship as agreed beforehand.">ضمان على التنفيذ وفق الاتفاق المسبق.</p></div>
+ </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book" class="px-4 py-16 max-w-[900px] mx-auto">
+ <div class="text-center reveal"><h2 class="text-3xl md:text-5xl font-black" data-ar="احجز خدمتك" data-en="Book a service">احجز خدمتك</h2>
+ <p class="mt-3" style="color:var(--dim)" data-ar="املأ البيانات وسيصل طلبك جاهزًا على واتساب." data-en="Fill in the details and your request opens ready-made in WhatsApp.">املأ البيانات وسيصل طلبك جاهزًا على واتساب.</p></div>
+ <form id="bookForm" class="glass p-6 md:p-8 mt-8 grid gap-4 md:grid-cols-2 reveal" novalidate>
+  <label class="grid gap-1 font-bold text-sm"><span data-ar="الاسم" data-en="Name">الاسم</span><input class="field" id="fName" autocomplete="name" data-ar-ph="اسمك الكامل" data-en-ph="Your full name" placeholder="اسمك الكامل"></label>
+  <label class="grid gap-1 font-bold text-sm"><span data-ar="رقم الجوال" data-en="Mobile number">رقم الجوال</span><input class="field" id="fPhone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="05xxxxxxxx"></label>
+  <label class="grid gap-1 font-bold text-sm"><span data-ar="الخدمة المطلوبة" data-en="Service">الخدمة المطلوبة</span>
+   <select class="field" id="fService"><option value="0" data-ar="تشطيبات وديكور" data-en="Finishing & décor">تشطيبات وديكور</option><option value="1" data-ar="سباكة" data-en="Plumbing">سباكة</option><option value="2" data-ar="كهرباء" data-en="Electrical">كهرباء</option><option value="3" data-ar="تكييف" data-en="Air conditioning">تكييف</option><option value="4" data-ar="كاميرات مراقبة" data-en="Security cameras">كاميرات مراقبة</option></select></label>
+  <label class="grid gap-1 font-bold text-sm"><span data-ar="المدينة" data-en="City">المدينة</span>
+   <select class="field" id="fCity"><option data-ar="الرياض" data-en="Riyadh">الرياض</option><option data-ar="جدة" data-en="Jeddah">جدة</option><option data-ar="مكة المكرمة" data-en="Makkah">مكة المكرمة</option><option data-ar="المدينة المنورة" data-en="Madinah">المدينة المنورة</option><option data-ar="الدمام" data-en="Dammam">الدمام</option><option data-ar="الخبر" data-en="Khobar">الخبر</option><option data-ar="أخرى" data-en="Other">أخرى</option></select></label>
+  <label class="grid gap-1 font-bold text-sm md:col-span-2"><span data-ar="تفاصيل الطلب" data-en="Details">تفاصيل الطلب</span><textarea class="field" id="fDetails" rows="4" data-ar-ph="اشرح المطلوب باختصار" data-en-ph="Briefly describe what you need" placeholder="اشرح المطلوب باختصار"></textarea></label>
+  <div class="md:col-span-2 grid gap-3">
+   <div id="preview" class="field" style="min-height:0;white-space:pre-wrap;font-size:.9rem;color:var(--dim)"></div>
+   <div class="flex flex-wrap gap-3">
+    <a id="waSend" class="glow-btn wa-btn" href="#" target="_blank" rel="noopener" aria-disabled="true"><span data-ar="أرسل الطلب عبر واتساب" data-en="Send via WhatsApp">أرسل الطلب عبر واتساب</span></a>
+    <button type="button" id="copyMsg" class="ghost" data-ar="نسخ الرسالة" data-en="Copy message">نسخ الرسالة</button>
+   </div>
+   <p id="formNote" class="text-sm" style="color:var(--dim)" role="status"></p>
+  </div>
+ </form>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer id="contact" class="px-4 pt-10 pb-28">
+ <div class="glass max-w-[1180px] mx-auto p-8 md:p-12 text-center reveal">
+  <div class="flex items-center justify-center gap-3 mb-5"><svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><defs><linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd24a"/><stop offset=".55" stop-color="#ff9a1f"/><stop offset="1" stop-color="#ff4f8b"/></linearGradient></defs><g stroke="url(#lg2)" stroke-width="4" stroke-linecap="round"><path d="M32 4v8M32 52v8M4 32h8M52 32h8M12.2 12.2l5.7 5.7M46.1 46.1l5.7 5.7M12.2 51.8l5.7-5.7M46.1 17.9l5.7-5.7"/></g><circle cx="32" cy="32" r="14" fill="url(#lg2)"/><path d="M22 34c4 6 16 6 20 0" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/></svg><span class="text-2xl font-black neon-text" data-ar="مؤسسة الشمس" data-en="Al Shams Est.">مؤسسة الشمس</span></div><h2 class="text-3xl md:text-4xl font-black" data-ar="تواصل معنا الآن" data-en="Contact us now">تواصل معنا الآن</h2>
+  <p class="mt-3" style="color:var(--dim)" data-ar="اضغط للاتصال أو راسلنا على واتساب." data-en="Tap to call or message us on WhatsApp.">اضغط للاتصال أو راسلنا على واتساب.</p>
+  <div class="mt-8 grid gap-4 md:grid-cols-2 max-w-3xl mx-auto">
+   <a class="glow-btn" href="tel:+966502659091" style="min-height:72px;font-size:1.4rem"><span>📞</span><bdi dir="ltr">+966 50 265 9091</bdi></a>
+   <a class="glow-btn wa-btn" href="https://wa.me/966502659091" target="_blank" rel="noopener" style="min-height:72px;font-size:1.4rem"><span>💬</span><span data-ar="واتساب" data-en="WhatsApp">واتساب</span></a>
+  </div>
+  <p class="mt-8 text-sm" style="color:var(--dim)">© <span id="yr"></span> <span data-ar="مؤسسة الشمس - المملكة العربية السعودية" data-en="Al Shams Est. - Saudi Arabia">مؤسسة الشمس - المملكة العربية السعودية</span></p>
+ </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/966502659091" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.6-.1a13 13 0 0 1-4.6-3.6 7.5 7.5 0 0 1-1.6-3.2c0-.7.3-1.2.6-1.5.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6a6 6 0 0 0 2.8 2.4c.3.1.5.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.2.5.3.1.2.1.8-.1 1.4z"/></svg></a>
+
+<script>
+(function(){
+var root=document.documentElement,NUM='966502659091',lang='ar';
+function $(s,c){return (c||document).querySelector(s)}
+function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
+var L={ar:{greet:'السلام عليكم، أود طلب خدمة:',n:'الاسم',p:'الجوال',s:'الخدمة',c:'المدينة',d:'التفاصيل',ok:'جاهز للإرسال',bad:'اكتب الاسم ورقم جوال صحيح أولًا',copied:'تم النسخ',fail:'تعذر النسخ، انسخ النص يدويًا'},
+ en:{greet:'Hello, I would like to request a service:',n:'Name',p:'Mobile',s:'Service',c:'City',d:'Details',ok:'Ready to send',bad:'Enter your name and a valid mobile number first',copied:'Copied',fail:'Copy failed, please copy manually'}};
+function setLang(l){
+ lang=l;root.lang=l;root.dir=l==='ar'?'rtl':'ltr';
+ $$('[data-ar]').forEach(function(e){var t=e.getAttribute('data-'+l);if(t!=null)e.textContent=t});
+ $$('[data-ar-ph]').forEach(function(e){e.placeholder=e.getAttribute('data-'+l+'-ph')});
+ var b=$('#langBtn');b.setAttribute('data-lang',l);b.setAttribute('aria-checked',l==='en');
+ document.title=l==='ar'?'مؤسسة الشمس | تشطيبات وديكور وسباكة وكهرباء وتكييف وكاميرات - السعودية':'Al Shams Est. | Finishing, Plumbing, Electrical, AC & Cameras - Saudi Arabia';
+ try{localStorage.setItem('lang',l)}catch(e){}
+ build();
+}
+$('#langBtn').addEventListener('click',function(){setLang(lang==='ar'?'en':'ar')});
+/* theme */
+var mq=window.matchMedia('(prefers-color-scheme: dark)');
+function eff(){var t=null;try{t=localStorage.getItem('theme')}catch(e){}return t||(mq.matches?'dark':'light')}
+function paint(){var t=eff();root.setAttribute('data-theme',t);$('#themeIco').textContent=t==='dark'?'☀️':'🌙';var m=$('meta[name=theme-color]');if(m)m.content=t==='dark'?'#070b18':'#eef3fb'}
+$('#themeBtn').addEventListener('click',function(){var n=eff()==='dark'?'light':'dark';try{localStorage.setItem('theme',n)}catch(e){}paint()});
+paint();
+/* images */
+$$('img[data-fallback]').forEach(function(i){i.addEventListener('error',function(){i.style.display='none'})});
+/* reveal */
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});$$('.reveal').forEach(function(e){io.observe(e)})}else{$$('.reveal').forEach(function(e){e.classList.add('in')})}
+/* 3D tilt */
+var fine=window.matchMedia('(hover:hover) and (pointer:fine)').matches&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(fine){$$('[data-tilt]').forEach(function(el){
+ el.addEventListener('pointermove',function(ev){var r=el.getBoundingClientRect(),x=(ev.clientX-r.left)/r.width-.5,y=(ev.clientY-r.top)/r.height-.5;el.style.transform='perspective(900px) rotateY('+(x*12)+'deg) rotateX('+(-y*12)+'deg) translateZ(8px)'});
+ el.addEventListener('pointerleave',function(){el.style.transform=''});
+})}
+/* form */
+var svcNames={ar:['تشطيبات وديكور','سباكة','كهرباء','تكييف','كاميرات مراقبة'],en:['Finishing & décor','Plumbing','Electrical','Air conditioning','Security cameras']};
+function valid(){var n=$('#fName').value.trim(),p=$('#fPhone').value.replace(/[\s\-()+]/g,'');return n.length>1&&/^(966|0)?5\d{8}$/.test(p)||(n.length>1&&/^\d{8,15}$/.test(p))}
+function msg(){var t=L[lang],c=$('#fCity'),s=+$('#fService').value;
+ return t.greet+'\n'+t.n+': '+$('#fName').value.trim()+'\n'+t.p+': '+$('#fPhone').value.trim()+'\n'+t.s+': '+svcNames[lang][s]+'\n'+t.c+': '+c.options[c.selectedIndex].textContent+'\n'+t.d+': '+($('#fDetails').value.trim()||'-')}
+function build(){var m=msg(),ok=valid(),a=$('#waSend');$('#preview').textContent=m;
+ a.href='https://wa.me/'+NUM+'?text='+encodeURIComponent(m);a.setAttribute('aria-disabled',ok?'false':'true');
+ $('#formNote').textContent=ok?L[lang].ok:L[lang].bad}
+$$('#bookForm input,#bookForm select,#bookForm textarea').forEach(function(e){e.addEventListener('input',build);e.addEventListener('change',build)});
+$('#bookForm').addEventListener('submit',function(e){e.preventDefault()});
+$('#waSend').addEventListener('click',function(e){if(!valid())e.preventDefault()});
+$('#copyMsg').addEventListener('click',function(){var m=msg(),n=$('#formNote');
+ function done(ok){n.textContent=ok?L[lang].copied:L[lang].fail}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(m).then(function(){done(true)},function(){done(false)})}else{try{var t=document.createElement('textarea');t.value=m;document.body.appendChild(t);t.select();var r=document.execCommand('copy');document.body.removeChild(t);done(r)}catch(x){done(false)}}});
+$('#yr').textContent=new Date().getFullYear();
+var sv=null;try{sv=localStorage.getItem('lang')}catch(e){}
+setLang(sv==='en'?'en':'ar');
+})();
+</script>
+</body>
+</html>
